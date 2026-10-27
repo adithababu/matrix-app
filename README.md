@@ -1,16 +1,19 @@
-# React + Vite
+# Eisenhower Matrix Prioritizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Project Overview
+A productivity application that implements the Eisenhower Matrix decision-making framework. 
+**Deployed Application:** https://matrix-app-beta-eight.vercel.app/
 
-Currently, two official plugins are available:
+## Problem Statement & Target Users
+Many people struggle with task prioritization, creating flat to-do lists that treat all tasks equally. This leads to time wasted on urgent but unimportant tasks. This app targets students and professionals who need a structured way to filter tasks by urgency and importance to maximize productivity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features & Application Logic
+- **Boolean Quadrant Sorting:** Uses state filtering logic to automatically sort tasks into four distinct quadrants based on boolean variables (`isUrgent`, `isImportant`).
+- **Data Persistence:** Utilizes browser `LocalStorage` to persist state, ensuring task data remains intact across sessions and page reloads.
+- **Dynamic State Management:** Built with React `useState` and `useEffect` to instantly update the UI when tasks are added or deleted.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technology Stack
+- **Frontend:** React.js (Vite)
+- **Styling:** Vanilla CSS 
+- **Database:** Browser LocalStorage
+- **Deployment:** Vercel
